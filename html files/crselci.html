@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<form action="../cgi-bin/queryBid.py" method="GET">
+    <p><h2>Retrieve information of suppliers who supplied part</h2></p>
+    <p>Please enter a part</p>
+        <input type="text" name="pname"><br>
+    <p>Please check the information you need</p>
+        <input type="checkbox" name="supid" value="sid">supplier id<br>
+        <input type="checkbox" name="supname" value="sname">supplier name<br>
+        <input type="checkbox" name="supadd" value="address">supplier address<br>
+        <input type="checkbox" name="supcost" value="cost">supplier cost<br>
+        <input type="submit" value="Submit">
+    <p><h2>Retrieve names of suppliers who have ever supplied a part with the cost or higher.</h2></p>
+    <p>Please enter cost of part</p>
+        <input type="text" name="cost"><br>
+        <input type="submit" value="Submit">
+    <p><h2>Retrieve names and addresses of suppliers who charge most for part</h2></p>
+    <p>Please enter a pid</p>
+        <input type="text" name="pid"><br>
+        <input type="hidden" name="A"><br>
+        <input type="submit" value="Submit">
+    <p><h2>Retrieves names of parts in given color which have been supplied by supplier at given address </h2></p>
+    <p>Please enter a color for part</p>
+        <input type="text" name="color"><br>
+    <p>Please enter an address</p>
+        <input type="text" name="address"><br>
+        <input type="submit" value="Submit">
+    <p><h2>Retrieves sid and names of suppliers at given address who dont sell parts</h2></p>
+    <p>Please enter an address</p>
+        <input type="text" name="address"><br>
+        <input type="submit" value="Submit">
+</form>
